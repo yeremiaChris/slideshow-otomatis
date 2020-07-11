@@ -1,0 +1,74 @@
+
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+        .slideshow-container {
+            background-color: aquamarine;
+            width: 1000px;
+            height: 500px;
+            margin: auto;
+        }
+        .slideshow-container img {
+            width: 1000px;
+            height: 500px;
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 100px;
+            top: -490px;
+            left: -340px;
+            opacity: .5;
+            position: relative;
+            background-color: #bbb;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
